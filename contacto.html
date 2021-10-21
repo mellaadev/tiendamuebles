@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Muebles | By Fran Mella</title>
+
+    <!-- Normalize -->
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Hoja de Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <header>
+        <h1 class="nombre-sitio">Tienda <span>Muebles</span></h1>
+    </header>
+
+    <div class="contenedor-navegacion">
+        <nav class="nav-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="galeria.html">Galería</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    
+    <main class="contenido-principal contenedor">
+        <h2 class="text-center">Contacto</h2>
+        
+        <form class="formulario">
+
+            <fieldset>
+                <legend class="text-center">Tus Datos</legend>
+
+                <div class="campo">
+                    <label for="name">Nombre: </label>
+                    <input class="input" type="text" placeholder="Introduce tu Nombre" id="name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto: </label>
+                    <input class="input" type="text" placeholder="Asunto" id="asunto" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email: </label>
+                    <input class="input" type="email" placeholder="Correo Electrónico" id="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Telefono: </label>
+                    <input class="input" type="tel" placeholder="Número de Teléfono" id="telefono" required>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea class="input" id="mensaje" rows="10" cols="20" required></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend class="text-center">País</legend>
+
+                <div class="campo">
+                    <label for="pais">País: </label>
+                    <select id="pais" class="input" required>
+                        <option selected disabled>-- Selecciona su País --</option>
+                        <option value="ES">España</option>
+                        <option value="USA">Estados Unidos</option>
+                        <option value="GB">Reino Unido</option>
+                        <option value="FR">Francia</option>
+                        <option value="ITA">Italia</option>
+                        <option value="AL">Alemania</option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend class="text-center">Información Extra</legend>
+
+                <div class="campo align-items">
+                    <label for="cliente">Cliente</label>
+                    <input type="radio" id="cliente" name="tipo" required>
+                </div>
+
+                <div class="campo align-items">
+                    <label for="proveedor">Proveedor</label>
+                    <input type="radio" id="proveedor" name="tipo" required>
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoría de Interés</label>
+                    <input list="categorias" name="categorias" class="input" required>
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Sofás">
+                        <option value="Exterior">
+                        <option value="Interior">
+                        <option value="Lámparas">
+                        <option value="Bodegas">
+                        <option value="Televisión">
+                        <option value="Oficinas">
+                    </datalist>
+                </div>
+
+            </fieldset>
+
+            <input type="submit" value="Enviar Formulario" class="btn btn-movil">
+
+        </form>
+
+    </main>
+
+
+    <footer class="site-footer">
+
+        <div class="contenedor grid-footer">
+
+            <div>
+                <h3>Categorías</h3>
+
+                <nav class="ordenar">
+                    <a href="#">Cocina</a>
+                    <a href="#">Oficina</a>
+                    <a href="#">Jardín</a>
+                    <a href="#">Cochera</a>
+                    <a href="#">Dormitorios</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3>Sobre nosotros</h3>
+
+                <nav class="ordenar">
+                    <a href="#">Nuestra Historia</a>
+                    <a href="#">Misión, Visión y Valores</a>
+                    <a href="#">Carreras</a>
+                    <a href="#">Política de Privacidad</a>
+                    <a href="#">Términos del Servicio</a>
+                </nav>
+            </div>
+
+            <div>
+                <h3>Soporte</h3>
+
+                <nav class="ordenar">
+                    <a href="#">Preguntas Frecuentes</a>
+                    <a href="#">Ayuda en Línea</a>
+                    <a href="#">Confianza y Seguridad</a>
+                </nav>
+            </div>
+
+        </div>
+
+        <p class="text-center">Todos los Derechos Reservados, Tienda Muebles ©</p>
+
+
+    </footer>
+
+</body>
+</html>
